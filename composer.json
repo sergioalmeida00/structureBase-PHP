@@ -1,0 +1,8 @@
+{
+    "name": "dev/estrutura-oo",
+    "autoload": {
+        "psr-4": {
+             "app\\": "app/"
+         }
+      }
+}
