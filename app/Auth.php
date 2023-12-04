@@ -3,12 +3,14 @@
 namespace app;
 
 use app\Model\User;
+use app\shared\Session;
 
 class Auth
 {
     public static function attempt($attributes)
     {
         $user = User::find('email', $attributes['email']);
-        var_dump($user->name);
+        Session::set('name', $user->name);
+        var_dump($_SESSION);
     }
 }
